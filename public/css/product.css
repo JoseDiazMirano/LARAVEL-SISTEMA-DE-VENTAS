@@ -1,0 +1,34 @@
+
+div.div1 {
+    height: 425px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 200px;
+    background:rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 2px solid #f70808;
+}
+div.div3 {
+    height: 425px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    /*background:blue;*/
+    background:rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 2px solid #f70808;
+}
+image{
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+}
+

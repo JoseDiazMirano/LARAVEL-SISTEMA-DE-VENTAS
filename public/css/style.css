@@ -1,0 +1,427 @@
+/*COLO DE EL NAVBAR*/
+:root{
+
+	--main-bg-color: #0e0303;
+} 
+
+
+.panel{
+    background-image: url('../dist/img/banner2.jpeg');
+    background-size: cover;
+    background-position: center;
+    
+}
+.panelSup {
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(251, 251, 251)!important;
+  }
+/*BARRA DE SEPARACION*/
+  hr{
+    width: 200px; 
+    border: 2px solid black;
+    }
+ 
+ 
+  p{
+      color: rgb(0, 0, 0);
+      font: 150% sans-serif;
+  }
+/*CARTAS PARA MOSTRAR LOS SERVICIOS*/
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+.contenedor figure{
+    position:relative;
+    height: 300px;
+    width: 500px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+.contenedor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(205, 92, 92,0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+   text-align: center;
+}
+.contenedor figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.btn4{
+    color: blanchedalmond;
+}
+
+.contenedor figure:hover > img{
+    transform: scale(1.3);
+}
+.contenedor figure .capa h3{
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 80px;
+    transition: all 500ms ease-out;
+     margin-top: 30px;
+}
+.contenedor figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1;
+    width: 75%;
+    max-width: 220px !important;
+    margin: auto;
+} 
+
+/*PARTE DE UBICANOS*/
+.border{
+    border-radius: 21px 21px 21px 21px;
+    -moz-border-radius: 21px 21px 21px 21px;
+    -webkit-border-radius: 21px 21px 21px 21px;
+    border: 5px solid #f7f7f7;
+}
+
+/*CONTACTENOS*/
+input.form-control, textarea.form-control{
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #ccc !important;
+    }
+
+.btn-primary{
+    border-color: #ed1c24; 
+    background-color: #ed1c24;
+}
+
+.btn3{
+	transition: all .5s ease;
+	width: 20%;
+	border-radius: 30px;
+	color:#E8112C;
+	font-weight: 600;
+	background-color: #fff;
+	border: 1px solid #E8112C;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+.btn3:hover, .btn:focus{
+	background-color: #E8112C;
+	color:#fff;
+}
+/*FOOTER LA PARTE BAJA DEL PROYECTO WELCOME*/
+.bg-dark{
+
+    background-color: var(--main-bg-color) !important;
+   }
+
+footer {
+    background-color: var(--main-bg-color);
+}
+
+.text-p p {
+    color: white;
+}
+.text-p h4,h2{
+    color: white;
+}
+
+
+
+.copy-right  p{
+	color:#fff;
+	font-size:1.1em;
+	text-align: center;
+	text-transform: uppercase;
+}
+.copy-right a:hover{
+	color:#fff;
+}
+
+.copy-right p a{
+	color:#CA1C0C;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	font-weight: 600;
+}
+
+/*SECCION DE LOGIN*/
+.main-content{/*PARTE DEL SOMBRADO*/
+	width: 50%;
+	border-radius: 20px;
+	box-shadow: 0 5px 5px rgba(232, 17, 44);
+	margin: 5em auto;
+	display: flex;
+}
+
+.company__info{
+	background-color: #E8112C;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+}
+
+.fa-android{
+	font-size:3em;
+}
+@media screen and (max-width: 640px) {
+	.main-content{width: 90%;}
+	.company__info{
+		display: none;
+	}
+	.login_form{
+		border-top-left-radius:20px;
+		border-bottom-left-radius:20px;
+	}
+}
+@media screen and (min-width: 642px) and (max-width:800px){
+	.main-content{width: 70%;}
+}
+.row > h2{
+	color:#E8112C;
+}
+.login_form{
+	background-color: #fff;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+form{
+	padding: 0 2em;
+}
+.form__input{
+	width: 100%;
+	border:0px solid transparent;
+	border-radius: 0;
+	border-bottom: 1px solid #aaa;
+	padding: 1em .5em .5em;
+	padding-left: 2em;
+	outline:none;
+	margin:1.5em auto;
+	transition: all .5s ease;
+}
+.form__input:focus{
+	border-bottom-color: #E8112C;
+	box-shadow: 0 0 5px rgba(232, 17, 44); 
+	border-radius: 4px;
+}
+.btnL{
+	transition: all .5s ease;
+	width: 70%;
+	border-radius: 30px;
+	color:#E8112C;
+	font-weight: 600;
+	background-color: #fff;
+	border: 1px solid #E8112C;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+.btnL:hover, .btn:focus{
+	background-color: #E8112C;
+	color:#fff;
+}
+/*AJUSTES DE PANEL ADMINISTRATIVO*/
+/*.btn{
+	transition: all .5s ease;
+	width: 70%;
+	border-radius: 30px;
+	color:#E8112C;
+	font-weight: 600;
+	background-color: #fff;
+	border: 1px solid #E8112C;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+.btn:hover, .btn:focus{
+	background-color: #E8112C;
+	color:#fff;
+}*/
+.btnadm{
+	transition: all .5s ease;
+	width: 70%;
+	border-radius: 30px;
+	color:#E8112C;
+	font-weight: 600;
+	background-color: transparent;
+	border: 1px solid transparent;
+	margin-top: 1.5em;
+    margin-bottom: 1em;
+    margin-left: 50px;
+}
+.btnadm:hover, .btn:focus{
+	background-color: #E8112C;
+	color:#fff;
+}
+
+.admin p{
+	color: white;
+    font: 100% sans-serif !important;
+}
+.admin p:hover{
+    color: red;
+}
+
+
+
+/*DASBOARD*/
+
+.card-box {
+    position: relative;
+    color: #fff;
+    padding: 20px 10px 40px;
+    margin: 20px 0px;
+    height: 250px;
+    border-radius: 21px 21px 21px 21px;
+    -moz-border-radius: 21px 21px 21px 21px;
+    -webkit-border-radius: 21px 21px 21px 21px;
+    
+}
+.card-box:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+.card-box:hover .icon i {
+    font-size: 210px;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+.card-box .inner {
+    padding: 5px 10px 0 10px;
+}
+.card-box h3 {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    white-space: nowrap;
+    padding: 0;
+    text-align: left;
+}
+.card-box p {
+    font-size: 15px;
+}
+.card-box .icon {
+    position: absolute;
+    top: auto;
+    bottom: 5px;
+    right: 5px;
+    z-index: 0;
+    font-size: 72px;
+    color: rgba(0, 0, 0, 0.15);
+}
+.card-box .card-box-footer {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    padding: 3px 0;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-decoration: none;
+    border-radius: 0px 0px 21px 21px;
+    -moz-border-radius: 21px 21px 21px 21px;
+    -webkit-border-radius: 21px 21px 21px 21px;
+}
+.card-box:hover .card-box-footer {
+    background: rgba(0, 0, 0, 0.3);
+}
+.bg-blue {
+    background-color: #00c0ef !important;
+}
+.bg-green {
+    background-color: #00a65a !important;
+}
+.bg-orange {
+    background-color: #f39c12 !important;
+}
+.bg-red {
+    background-color: #d9534f !important;
+}
+
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+div .iframe{
+		border-radius: 21px 21px 21px 21px;
+       -moz-border-radius: 21px 21px 21px 21px;
+       -webkit-border-radius: 21px 21px 21px 21px;
+       border: 2px solid #ed1c24;
+}
+
+
+
+/*PICING*/
+.panel {
+    border: 1px solid black;
+    border-radius:0;
+    transition: box-shadow 0.5s;
+  }
+  
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  
+  .panel-footer {
+    background-color: #fff !important;
+  }
+  
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
