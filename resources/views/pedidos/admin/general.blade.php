@@ -16,6 +16,7 @@
                             <h5 class="card-title">{{$pedido->titulo}}</h5>
                             <p class="card-text">{{$pedido->texto}}</p>
                             <p class="card-text"><small class="text-muted">Fecha:{{ $pedido->created_at}}</small></p>
+                            <p class="card-text"><small class="text-muted">Fecha:{{ $pedido->update_at}}</small></p>
                             <h5 class="card-title">COCINERO:{{$pedido->user_id}}</h5><br>
                             <h5 class="card-text">PRECIO:S/{{$pedido->precio}}</h5>
                           </div>
