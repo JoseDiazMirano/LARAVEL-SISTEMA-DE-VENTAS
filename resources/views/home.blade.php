@@ -100,8 +100,7 @@
             <div class="col-lg-6 col-sm-6">
                 <div class="card-box bg-orange">
                     <div class="inner">
-                    <?php $entradas_count = DB::table('entradas')->count(); ?>
-                        <h3>{{ $entradas_count ?? '0' }}</h3>
+                        <h3>Contador</h3>
                         <p>otros...</p>
                     </div>
                     <div class="icon">
@@ -112,9 +111,8 @@
             </div>
             <div class="col-lg-6 col-sm-6">
                 <div class="card-box bg-red">
-                    <div class="inner">
-                    <?php $bebidas_count = DB::table('bebidas')->count(); ?>
-                        <h3>{{ $bebidas_count ?? '0' }}</h3>
+                    <div class="inner">  
+                        <h3>Contador</h3>
                         <p>otros....</p>
                     </div>
                     <div class="icon">
